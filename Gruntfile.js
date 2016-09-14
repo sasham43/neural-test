@@ -28,7 +28,7 @@ module.exports = function(grunt){
       },
       build: {
         src: 'client/client.js',
-        dest: 'server/public/scripts/client.min.js'
+        dest: 'server/public/assets/scripts/client.min.js'
       }
     }
   });
