@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="neuralApp">
   <head>
     <meta charset="utf-8">
     <title>Neural Net</title>
@@ -13,9 +13,13 @@
   <link rel="stylesheet" href="assets/styles/style.css">
   <script src="assets/scripts/client.min.js"></script>
   </head>
-  <body ng-app="neuralApp">
-    <div ng-controller="MainController">
-      <h1>It's allliiiive!!!</h1>
+  <body ng-controller="MainController as mc">
+    <div>
+      <button ng-click="mc.train()">Paint</button>
+      <div class="image-container">
+        <img id="input" src="./assets/images/chrome.jpg"/>
+        <canvas id="canvas-demo"></canvas>
+      </div>
     </div>
   </body>
 </html>
