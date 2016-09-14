@@ -8,7 +8,8 @@ module.exports = function(grunt){
         src: [
           'angular/angular.min.js',
           'angular/angular.min.js.map',
-          'socket.io-client/socket.io.js'
+          'socket.io-client/socket.io.js',
+          'synaptic/dist/synaptic.js'
         ],
         dest: 'server/public/vendor'
       }
